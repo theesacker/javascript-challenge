@@ -2,7 +2,7 @@
 var tableData = data;
 
 // Create variable to select form
-var form = d3.select("#datetime");
+var form = d3.select("#alien-form");
 
 // Create variable to select button
 var button = d3.select("#filter-btn");
@@ -23,7 +23,9 @@ function runEnter(){
 
     // Get value of the input element
     var inputValue = inputElement.property("value");
-    console.log(inputElement);
-    console.log(inputValue);
+    // console.log(inputElement);
+    // console.log(inputValue);
 
+    var filteredSights = tableData.filter(alien => alien.datetime === inputValue);
+    console.log(filteredSights)
 };
