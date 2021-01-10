@@ -31,13 +31,6 @@ function runEnter(){
 
     // Create variables for table data
     var tbody = d3.select("tbody");
-    // var alienTime = filteredSights.map(alien => alien.datetime);
-    // var alienCity = filteredSights.map(alien => alien.city);
-    // var alienState = filteredSights.map(alien => alien.state);
-    // var alienCountry = filteredSights.map(alien => alien.country);
-    // var alienShape = filteredSights.map(alien => alien.shape);
-    // var alienDuration = filteredSights.map(alien => alien.duration);
-    // var alienComments = filteredSights.map(alien => alien.comments);
     data.forEach(function(filteredSights){
     console.log(filteredSights);
     var dataRow = tbody.append("tr");
